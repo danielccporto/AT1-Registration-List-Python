@@ -1,4 +1,4 @@
-# Armazenamento dos cadastros
+# Armazenamento das listas 
 cadastro = []
 nomes = []
 cpfs = []
@@ -8,12 +8,15 @@ CP = []
 
 nome = input("Digite seu nome ou se quiser encerrar o programa digite a palavra terminou: ")
 
+#condição para start do programa 
+
 if nome.strip() != "terminou":
   data = input("Digite sua data de nascimento (no formato dd/mm/aaaa): ")
   CP = input("Digite seu CPF: ")
 
 i = 0
 
+#loop para registro
 while nome.strip() != "terminou": 
   cadastro.append(i+1)
   nomes.append(nome)
